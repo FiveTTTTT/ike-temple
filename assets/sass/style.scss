@@ -58,19 +58,13 @@ select {
 header {
     height: 80vh;
     width: 100%;
-    background-color: #000;
+    // background-color: #000;
     position: relative;
     overflow: hidden;
 
     img {
         width: 200%;
     }
-
-    // #onlyIke,
-    // #fullPanorama {
-    //     animation: animate-enter-frames 0.8s ease-in-out 0.00s 1 normal forwards;
-
-    // }
 
     #fullPanorama {
         animation: animate-enter-frames 0.8s ease-in-out 0.00s 1 normal forwards;
@@ -80,18 +74,19 @@ header {
     }
 
     #onlyIke {
-        animation: animate-enter-frames 0.76s ease-in-out 0.00s 1 normal forwards, 
-        animate-enter-frames2 0.8s ease-in-out 0.79s 1 normal forwards, 
-        animate-enter-frames3 0.8s ease-in-out 1.59s 1 normal forwards;
+        background-color: rgba(255, 255, 255, 0);
+        animation: animate-enter-frames 0.76s ease-in-out 0.00s 1 normal forwards,
+            animate-enter-frames2 0.8s ease-in-out 0.79s 1 normal forwards,
+            animate-enter-frames3 0.8s ease-in-out 1.59s 1 normal forwards;
         transform: translate(-1535px, 0);
         position: absolute;
-        z-index: 2;
+        z-index: 3;
     }
 
     #heroTitle {
         animation: animate-enter-frames4 0.8s ease-in-out 2.39s 1 normal forwards;
         position: absolute;
-        z-index: 2;
+        z-index: 3;
         width: 30%;
         top: 25%;
         right: 25%;
@@ -99,7 +94,9 @@ header {
 
         h1,
         p {
-            color: #fff;
+            color: #FEE440;
+            text-shadow: 3px 1px 6px #fff;
+
         }
 
         h1 {
@@ -123,7 +120,9 @@ header {
     }
 
     @keyframes animate-enter-frames2 {
-        from {}
+        from {
+            background-color: rgba(0, 0, 0, 0);
+        }
 
         to {
             background-color: rgba(0, 0, 0, 0.75);
@@ -151,6 +150,4 @@ header {
             transform: translate(-500px, 0);
         }
     }
-
-
 }
