@@ -1,0 +1,22 @@
+{
+  "name": "ike-temple",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch assets/sass/index.scss assets/css/index.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FiveTTTTT/ike-temple.git"
+  },
+  "author": "Theodore Cadet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FiveTTTTT/ike-temple/issues"
+  },
+  "homepage": "https://github.com/FiveTTTTT/ike-temple#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

@@ -1,0 +1,126 @@
+/*  ============= WEB BROWSER RESETS ============ */
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  scroll-behavior: smooth;
+  scroll-padding-top: 20px;
+}
+
+body {
+  max-width: 1600px;
+  line-height: 1.5;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* ================= ENDS ================ */
+header {
+  height: 80vh;
+  width: 100%;
+  background-color: #000;
+  position: relative;
+  overflow: hidden;
+}
+header img {
+  width: 200%;
+}
+header #fullPanorama {
+  animation: animate-enter-frames 0.8s ease-in-out 0s 1 normal forwards;
+  transform: translate(-1535px, 0);
+  position: absolute;
+  z-index: 1;
+}
+header #onlyIke {
+  animation: animate-enter-frames 0.76s ease-in-out 0s 1 normal forwards, animate-enter-frames2 0.8s ease-in-out 0.79s 1 normal forwards, animate-enter-frames3 0.8s ease-in-out 1.59s 1 normal forwards;
+  transform: translate(-1535px, 0);
+  position: absolute;
+  z-index: 2;
+}
+header #heroTitle {
+  animation: animate-enter-frames4 0.8s ease-in-out 2.39s 1 normal forwards;
+  position: absolute;
+  z-index: 2;
+  width: 30%;
+  top: 25%;
+  right: 25%;
+  opacity: 0;
+}
+header #heroTitle h1,
+header #heroTitle p {
+  color: #fff;
+}
+header #heroTitle h1 {
+  font-size: calc(48px + 36 * (100vw - 320px) / 1280);
+}
+header #heroTitle p {
+  font-size: calc(16px + 5 * (100vw - 320px) / 1280);
+}
+@keyframes animate-enter-frames {
+  from {
+    transform: translate(-1535px, 0);
+  }
+  to {
+    transform: translate(-800px, 0);
+  }
+}
+@keyframes animate-enter-frames2 {
+  to {
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+}
+@keyframes animate-enter-frames3 {
+  from {
+    transform: translate(-800px, 0) scale(1);
+  }
+  to {
+    transform: translate(750px, -27%) scale(2);
+  }
+}
+@keyframes animate-enter-frames4 {
+  from {
+    opacity: 0;
+    transform: translate(100px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-500px, 0);
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
