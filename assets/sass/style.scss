@@ -151,3 +151,31 @@ header {
         }
     }
 }
+
+main{
+    margin: 0 5%;
+    section#timelinePresentation{
+        article{
+            height: 65vh;
+            background: rgba(0, 0, 0, 0.75);
+            display: flex;
+            justify-content: c;
+            img{
+                width: 80%;
+            }
+            .timelineImg, .timelineTxt{
+                width: 40%;
+            }
+        }
+        .sideRight{
+            flex-direction: row;
+            .timelineTxt{
+                text-align: end;
+                
+            }
+        }
+        .sideLeft{
+            flex-direction: row-reverse;
+        }
+    }
+}

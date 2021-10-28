@@ -127,4 +127,29 @@ header #heroTitle p {
   }
 }
 
+main {
+  margin: 0 5%;
+}
+main section#timelinePresentation article {
+  height: 65vh;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: c;
+}
+main section#timelinePresentation article img {
+  width: 80%;
+}
+main section#timelinePresentation article .timelineImg, main section#timelinePresentation article .timelineTxt {
+  width: 40%;
+}
+main section#timelinePresentation .sideRight {
+  flex-direction: row;
+}
+main section#timelinePresentation .sideRight .timelineTxt {
+  text-align: end;
+}
+main section#timelinePresentation .sideLeft {
+  flex-direction: row-reverse;
+}
+
 /*# sourceMappingURL=index.css.map */
